@@ -1,0 +1,98 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+   
+
+    <div class="top-category-view">
+        <div class="img-txt">
+            <img src="/assets/images/Home Decor/Copy of kettle 1.jpg" alt="product">
+            <p>Category</p>
+        </div>
+
+
+        <div class="img-txt">
+            <img src="/assets/images/Home Decor/Copy of buddha3.jpg" alt="product">
+            <p>Category</p>
+        </div>
+        <div class="img-txt">
+            <img src="/assets/images/Home Decor/Copy of kettle 1.jpg" alt="product">
+            <p>Category</p>
+        </div>
+
+
+        <div class="img-txt">
+            <img src="/assets/images/Home Decor/Copy of buddha3.jpg" alt="product">
+            <p>Category</p>
+        </div>
+
+        <div class="img-txt">
+            <img src="/assets/images/Home Decor/Copy of kettle 1.jpg" alt="product">
+            <p>Category</p>
+        </div>
+
+        <div class="img-txt">
+            <img src="/assets/images/Home Decor/Copy of buddha3.jpg" alt="product">
+            <p>Category</p>
+        </div>
+
+        <div class="img-txt">
+            <img src="/assets/images/Home Decor/Copy of kettle 1.jpg" alt="product">
+            <p>Category</p>
+        </div>
+
+        <div class="img-txt">
+            <img src="/assets/images/Home Decor/Copy of buddha3.jpg" alt="product">
+            <p>Category</p>
+        </div>
+
+        <div class="img-txt">
+            <img src="/assets/images/Home Decor/Copy of kettle 1.jpg" alt="product">
+            <p>Category</p>
+        </div>
+
+        <div class="img-txt">
+            <img src="/assets/images/Home Decor/Copy of buddha3.jpg" alt="product">
+            <p>Category</p>
+        </div>
+
+        <div class="img-txt">
+            <img src="/assets/images/Home Decor/Copy of kettle 1.jpg" alt="product">
+            <p>Category</p>
+        </div>
+
+        <div class="img-txt">
+            <img src="/assets/images/Home Decor/Copy of buddha3.jpg" alt="product">
+            <p>Category</p>
+        </div>
+
+
+    </div>
+
+
+    <div class="heading-banner na">
+        <p>New Arrival</p>
+    </div>
+
+    <h1 class="first-heading">new arrival</h1>
+
+    <!-- product gallery -->
+
+    <div class="products-bar product">
+        <% products.forEach(product => { %>
+            <div class="products">
+                <div class="image" >
+                    <img src="<%= product.image %>" alt="fgsf">
+                </div>
+               
+                <p><%= product.name %></p>
+              
+            </div>
+        <% }); %>
+
+    </div>
+
+    
+
+
+   
+</body>

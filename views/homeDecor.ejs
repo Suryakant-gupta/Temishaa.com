@@ -1,0 +1,52 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+
+ 
+
+
+    <div class="heading-banner hd">
+        <p>Home Decor</p>
+    </div>
+
+
+    <div class="banner-partition">
+        <a href=""><div class="first">
+            <p>best selling</p>
+        </div></a>
+       <a href="">
+        <div class="second">
+            <p> best product</p>
+         </div>
+       </a>
+    </div>
+
+    <div class="products-bar product">
+        <% products.forEach(product => { %>
+            <div class="products">
+                <div class="image" >
+                    <img src="<%= product.image %>" alt="<%= product.name %>">
+                </div>
+               
+                <p><%= product.name %></p>
+              
+            </div>
+        <% }); %>
+    </div>
+
+    
+    <div class="banner-partition">
+        <a href=""><div class="first">
+            <p>best selling</p>
+        </div></a>
+       <a href="">
+        <div class="second">
+            <p> best product</p>
+         </div>
+       </a>
+    </div>
+
+
+
+   
+</body>

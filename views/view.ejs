@@ -1,0 +1,28 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    
+   
+
+    <div class="product-details">
+        <div class="product-view">
+            
+            <h1><%= product.name %></h2>
+                <img src="<%= product.image %>" alt="<%= product.name %>">
+                <p><%= product.description %></h2>
+
+                <p>Product No. : <%= product.articleNumber %> </p>
+            </div>
+            <div class="right right-view">
+                <form action="">
+                    <input type="text" name="name" id="" placeholder="Enter your name">
+                    <input type="email" name="email" id="" placeholder="Leave your email here">
+                    <input type="number" name="number" placeholder=" Enter your contact number ">
+                    <input type="text" name="number" value="<%= product.articleNumber %>" readonly>
+                    <textarea name="data" id="" cols="30" rows="5" placeholder="leave a message" ></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    
+</body>

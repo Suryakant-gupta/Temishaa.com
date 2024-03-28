@@ -1,0 +1,277 @@
+<% layout("/layouts/boilerplate") %>
+
+
+    <div class="home-main-page">
+
+
+        <div class="cta-banner f2">
+            <div class="cta-form">
+                <h1 style="text-align: center !important;">Contact Us</h1>
+                <form action="/temishaa/details" method="post">
+                    <input type="text" name="name" id="" placeholder="Enter your name">
+                    <input type="email" name="email" id="" placeholder="Leave your email here">
+                    <input type="number" name="number" placeholder=" Enter your contact number ">
+                    <textarea name="message" id="" cols="30" rows="5" placeholder="leave a message" ></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="top-category-view">
+            <div class="img-txt">
+                <img src="/assets/images/Home Decor/Copy of kettle 1.jpg" alt="product">
+                <p>Category</p>
+            </div>
+
+
+            <div class="img-txt">
+                <img src="/assets/images/Home Decor/Copy of buddha3.jpg" alt="product">
+                <p>Category</p>
+            </div>
+            <div class="img-txt">
+                <img src="/assets/images/Home Decor/Copy of kettle 1.jpg" alt="product">
+                <p>Category</p>
+            </div>
+
+
+            <div class="img-txt">
+                <img src="/assets/images/Home Decor/Copy of buddha3.jpg" alt="product">
+                <p>Category</p>
+            </div>
+
+            <div class="img-txt">
+                <img src="/assets/images/Home Decor/Copy of kettle 1.jpg" alt="product">
+                <p>Category</p>
+            </div>
+
+            <div class="img-txt">
+                <img src="/assets/images/Home Decor/Copy of buddha3.jpg" alt="product">
+                <p>Category</p>
+            </div>
+
+            <div class="img-txt">
+                <img src="/assets/images/Home Decor/Copy of kettle 1.jpg" alt="product">
+                <p>Category</p>
+            </div>
+
+            <div class="img-txt">
+                <img src="/assets/images/Home Decor/Copy of buddha3.jpg" alt="product">
+                <p>Category</p>
+            </div>
+
+            <div class="img-txt">
+                <img src="/assets/images/Home Decor/Copy of kettle 1.jpg" alt="product">
+                <p>Category</p>
+            </div>
+
+            <div class="img-txt">
+                <img src="/assets/images/Home Decor/Copy of buddha3.jpg" alt="product">
+                <p>Category</p>
+            </div>
+
+            <div class="img-txt">
+                <img src="/assets/images/Home Decor/Copy of kettle 1.jpg" alt="product">
+                <p>Category</p>
+            </div>
+
+            <div class="img-txt">
+                <img src="/assets/images/Home Decor/Copy of buddha3.jpg" alt="product">
+                <p>Category</p>
+            </div>
+
+
+        </div>
+
+        <div class="showcase b1">
+            <div class="text">
+                <h1>Finest Products</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>Shop now</button>
+            </div>
+        </div>
+
+       
+
+        <p class="ext-text good">Home Decor Products</p>
+
+        <!-- products bar -->
+
+        <div class="products-bar">
+            
+            <% products.forEach(product=> { %>
+                <div class="products">
+                    <div class="image">
+                        <img src="<%= product.image %>" alt="<%= product.name %>">
+                    </div>
+
+                    <a href="/temishaa/<%= product._id %>?page=<%= currentPage %>">
+                        <b><%= product.name %></b>
+                    </a>
+                    <p>
+                       <b> Product Id : <%= product.articleNumber %></b>
+                    </p>
+
+                </div>
+                <% }); %>
+
+
+        </div>
+
+        <!-- just banner -->
+        <div class="showcase b2">
+            <div class="text">
+                <h1>Finest Products</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>Shop now</button>
+            </div>
+        </div>
+
+
+        <!-- lead-box  -->
+
+        <div class="lead-form">
+            <p>Leave your email our team will contact you soon</p>
+            <form action="/temishaa/details" method="post"> 
+                <input type="text" name="lead" id="" placeholder="enter your email">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+        <!-- product gallery  -->
+        <h1 class="product-headding">New Arrivals</h1>
+
+        <!-- Photo Grid -->
+
+        <!-- Photo Grid -->
+        <div class="Rw">
+
+            <div class="Col">
+                <img src="https://www.w3schools.com/w3images/underwater.jpg">
+                <img src="https://www.w3schools.com/w3images/ocean.jpg">
+                <img src="https://www.w3schools.com/w3images/wedding.jpg">
+                <img src="https://www.w3schools.com/w3images/mountainskies.jpg">
+                <img src="https://www.w3schools.com/w3images/rocks.jpg">
+                <img src="https://www.w3schools.com/w3images/underwater.jpg">
+            </div>
+            <div class="Col">
+                <img src="https://www.w3schools.com/w3images/wedding.jpg">
+                <img src="https://www.w3schools.com/w3images/rocks.jpg">
+                <img src="https://www.w3schools.com/w3images/falls2.jpg">
+                <img src="https://www.w3schools.com/w3images/paris.jpg">
+                <img src="https://www.w3schools.com/w3images/nature.jpg">
+                <img src="https://www.w3schools.com/w3images/mist.jpg">
+                <img src="https://www.w3schools.com/w3images/paris.jpg">
+            </div>
+            <div class="Col">
+                <img src="https://www.w3schools.com/w3images/underwater.jpg">
+                <img src="https://www.w3schools.com/w3images/ocean.jpg">
+                <img src="https://www.w3schools.com/w3images/wedding.jpg">
+                <img src="https://www.w3schools.com/w3images/mountainskies.jpg">
+                <img src="https://www.w3schools.com/w3images/rocks.jpg">
+                <img src="https://www.w3schools.com/w3images/underwater.jpg">
+            </div>
+            <div class="Col">
+                <img src="https://www.w3schools.com/w3images/wedding.jpg">
+                <img src="https://www.w3schools.com/w3images/rocks.jpg">
+                <img src="https://www.w3schools.com/w3images/falls2.jpg">
+                <img src="https://www.w3schools.com/w3images/paris.jpg">
+                <img src="https://www.w3schools.com/w3images/nature.jpg">
+                <img src="https://www.w3schools.com/w3images/mist.jpg">
+                <img src="https://www.w3schools.com/w3images/paris.jpg">
+            </div>
+
+        </div>
+
+
+
+
+        <!-- showcase banner -->
+
+        <div class="showcase b3">
+            <div class="text">
+                <h1>Finest Products</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>Shop now</button>
+            </div>
+        </div>
+
+
+        <!-- another product gallery -->
+        <h1 class="product-headding">Handicraft Jewellery Products</h1>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="/assets/images/asset 106.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 108.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 106.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 107.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 106.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 105.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 106.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 103.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 106.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 101.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 106.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 108.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 106.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 108.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 106.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 109.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 106.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 103.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 106.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/asset 110.jpeg" alt="Image 1">
+            </div>
+
+            <!-- Add more gallery items as needed -->
+        </div>
+
+
+        <!-- banner area -->
+
+        
+
+
+
+    </div>

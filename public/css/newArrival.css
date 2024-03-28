@@ -1,0 +1,56 @@
+:root{
+    --logo-color : #B36F27;
+   
+    --hz-pad : 4rem;
+}
+.heading-banner{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.na{
+    background: url("/assets/Newfolder/p5.png");
+
+}
+.ab{
+    background: url("/assets/Newfolder/p2.png");
+
+}
+.hd{
+    background: url("/assets/Newfolder/p1.png");
+
+}
+.jw{
+    background: url("/assets/Newfolder/p7.png");
+
+}
+.cn{
+    background: url("/assets/Newfolder/p6.png");
+
+}
+.heading-banner p{
+  font-size: 5rem;
+  font-family: embassy;
+  font-weight: bold;
+}
+.first-heading{
+    text-align: center;
+    color: #B36F27;
+    text-transform: capitalize;
+    /* font-family: embassy; */
+    font-size: 4rem;
+    padding-block: 2rem;
+}
+
+.product{
+    padding-inline: 1rem;
+    flex-wrap: wrap;
+}
+
+
+
+.cta{
+    margin-top: 2rem;
+}

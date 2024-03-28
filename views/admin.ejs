@@ -1,0 +1,28 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <h1>hello</h1>
+
+    <form action="/temishaa/admin" method="POST" enctype="multipart/form-data">
+
+        <label for="name">Title:</label><br>
+        <input id="name" name="name" placeholder="Enter title of image"><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <label for="image">Image:</label><br>
+        <input type="file" id="image" name="image"><br><br>
+    
+        <!-- Dropdown/select element for selecting the page -->
+        <label for="page">Select Page:</label><br>
+        <select id="page" name="page">
+            <option value="newArrivals">New Arrivals</option>
+            <option value="jwellery">Jewellery</option>
+            <option value="homeDecor">Home Decor</option>
+            <option value="index">Home</option>
+            <!-- Add other page options as needed -->
+        </select><br><br>
+    
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
